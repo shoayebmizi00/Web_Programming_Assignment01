@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>E-Commerce Store</title>
 </head>
 <body>
@@ -12,21 +13,23 @@
                 <h1>Shop</h1>
             </div>
             <div class = "nav-links">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Products</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
             </div>
         </nav>
     </header>
     <!-- Title Section -->
-     <section>
-        <div>
+     <section class="title-section">
+        <div class="heading">
             <h2>Explore Our Products</h2>
             <p>Discover our latest collection at the best price.</p>
         </div>
         <div>
-            <form>
+            <form class="form-section">
                 <label for="category">Category</label>
                 <select id="category" name="category">
                     <option value="all">All</option>
@@ -48,7 +51,7 @@
 
     <!-- Products Section -->
      <section>
-        <div>
+        <div class="products-container">
             <div class="product-card">
                 <img src ="./img/img1.jpg" alt="Air buds">
                 <h3>Wireless Air Bud</h3>
@@ -118,8 +121,14 @@
                 <p>$39.99</p>
                 <button class="btn">Add to Cart</button>
             </div>
-
         </div>
      </section>
+
+     <!-- Footer Section -->
+        <footer>
+            <div>
+                <p>&copy; 2025, All rights reserved by Md Shoayeb Mizi.</p>
+            </div>
+        </footer>
 </body>
 </html>
